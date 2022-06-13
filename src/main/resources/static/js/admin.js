@@ -107,6 +107,8 @@ function createMaster() {
     Phone.value = "";
     image.value = "";
 }
+
+//rere
 function deleteUser(id) {
     var xhttp = new XMLHttpRequest();
     xhttp.open("DELETE", "http://localhost:8081/admin/" + id , true);
