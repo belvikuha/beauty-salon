@@ -1,0 +1,52 @@
+.menu-item2{
+    /* display: flex; */
+    margin-right: 70px;
+    
+    height: 20px;
+    /* padding: 30px; */
+  }
+  .menu-item2 a{
+    float: right;
+    /* text-align: center; */
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: -30px;
+    font-family: 'Ramabhadra';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.15em;
+
+    color: #050303;
+  }
+
+.about_us_container{
+    justify-content: center;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 70px;
+}
+.about_us_block{
+    width: 400px;
+    height: 200px;
+    padding: 10px 80px;
+}
+.h_about{
+    font-size: 35px;
+line-height: 129.7%;
+/* identical to box height, or 48px */
+color:#383737;
+letter-spacing: 0.45em;
+/* margin-top: 140px;
+margin-bottom: -30px; */
+text-align: center;
+}
+
+.abou_Us{
+    padding-top: 100px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+<body>
+    <div class=" modal admin-modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__close">&times;</div>
+<!--                <form action="" class = "enter_admin_form">-->
+    
+                    <div class="modal__title">вход</div>
+                   
+                    <input required placeholder="Пароль" name="password" type="password" class="modal__input user_passw" id="admin_passw_enter">
+                    <div  id="form_info_text_enter"></div>
+                    <button id="btn_admin_entr"  class=" btn_dark btn_min form_btn">Войти</button>
+    
+
+<!--                </form>-->
+            </div>
+        </div>
+    </div>
+<div class="menu">
+<!-- <a href="#">Заказы</a>
+<a href="#">Услуги</a>
+<a href="#">Мастера</a> -->
+
+
+<div class="tabheader">
+    
+    <div class="tabheader__items">
+        <div id="req"  class="tabheader__item tabheader__item_active">Заказы</div>
+        <div id="serv" class="tabheader__item">Услуги</div>
+        <div id="mast" class="tabheader__item">Мастера</div>
+    </div>
+</div>
+
+
+</div>
+<div class="main">
+    <div class="tabcontainer">
+        <div class="tabcontent offers" >
+            Заказы
+            <select name="" id="Req_orderBy">
+                <option disabled>Заявки</option>
+                <option value="registr">Зарегистрированы</option>
+                <option value="!registr">Не зарегистрированы</option>
+                <option value="date">По дате</option>
+            </select>
+            <button id="btn_sortReq">Find</button>
+            <table class="requestList"></table>
+
+        </div>
+         <div class="tabcontent services">
+             <input id="serv_name" placeholder="name">
+             <input id="serv_price" type="number" placeholder="price">
+             <input id="serv_img" type="file"  accept=".jpg, .jpeg, .png">
+             <button class="btn_add_serv">Add Service</button>
+             <table class="serviceList"></table>
+        </div>
+         <div class="tabcontent master">
+                <input id="master_name" placeholder="name">
+                <input id="master_phone" placeholder="phone">
+                <input id="master_img" type="file" >
+             <select name="" id="selectserv">
+
+                     <option disabled>Service</option>
+                     <option value="Чебурашка"></option>
+             </select>
+                <button class="btn_add_master">Add Master</button>
+             <table class="masterList"></table>
+        </div>
+       
+        
+    </div>
+</div>
+
+<script src="js/admin.js"> </script>
+<script src="js/form.js"> </script>
+</body>
+</html>
